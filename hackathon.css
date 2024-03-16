@@ -352,7 +352,7 @@
     background-image: url('./assets/Footer.png');
     background-size: cover;
     background-position: center;
-    min-height: 55vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
