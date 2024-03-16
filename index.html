@@ -25,9 +25,13 @@
 
 <body>
     <div class="hackathon">
-        <nav class="navbar navbar-expand-lg navbar-light bg pe-5 ps-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg pe-4 ps-2">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/irita 1.png" alt="bg-img" />
+                <div class="d-flex">
+                    <img src="assets/round 1.png" alt="bg-img" class="ncsrc-logo"/> 
+                    <img src="assets/irita 1.png" alt="bg-img" />
+                </div>
+                
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,19 +134,28 @@
                     <div class="col-md-4">
                         <div class="guest">
                             <img src="./assets/guest.png" alt="Guest 1">
-                            <div class="designation">CEO</div>
+                            <div class="designation">
+                                <p>CEO</p>
+                                <button class="profile" onclick="window.location.href='/'">Profile</button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="guest">
                             <img src="./assets/guest.png" alt="Guest 2">
-                            <div class="designation">Marketing Director</div>
+                            <div class="designation">
+                                <p>Marketing Director</p>
+                                <button class="profile" onclick="window.location.href='/'">View Profile</button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="guest">
                             <img src="./assets/guest.png" alt="Guest 3">
-                            <div class="designation">Creative Director</div>
+                            <div class="designation">
+                                <p>Creative Director</p>
+                                <button class="profile" onclick="window.location.href='/'">View Profile</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,19 +173,28 @@
                     <div class="col-md-4">
                         <div class="speaker">
                             <img src="./assets/guest.png" alt="speaker 1">
-                            <div class="designation">CEO</div>
+                            <div class="designation">
+                                <p>CEO</p>
+                                <button class="profile" onclick="window.location.href='/'">View Profile</button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="speaker">
                             <img src="./assets/guest.png" alt="speaker 2">
-                            <div class="designation">Marketing Director</div>
+                            <div class="designation">
+                                <p>Marketing Director</p>
+                                <button class="profile" onclick="window.location.href='/'">View Profile</button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="speaker">
                             <img src="./assets/guest.png" alt="speaker 3">
-                            <div class="designation">Creative Director</div>
+                            <div class="designation">
+                                <p>Creative Director</p>
+                                <button class="profile" onclick="window.location.href='/'">View Profile</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -193,11 +215,25 @@
                         </p>
                     </div>
                     <div class="col-md-4 d-flex justify-content-center align-items-center">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15547.37646398402!2d80.2563296!3d13.0455926!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526637ae34f951%3A0x775581c2f29236c5!2sRussian%20Cultural%20Centre!5e0!3m2!1sen!2sin!4v1710489613270!5m2!1sen!2sin" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15547.37646398402!2d80.2563296!3d13.0455926!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526637ae34f951%3A0x775581c2f29236c5!2sRussian%20Cultural%20Centre!5e0!3m2!1sen!2sin!4v1710489613270!5m2!1sen!2sin"
+                            width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="map"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
+
+            <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 8">
+                    <path fill="currentColor" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7" />
+                </svg>
+            </button>
+
+
         </footer>
+
+
+
 
     </div>
 
