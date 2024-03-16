@@ -379,6 +379,12 @@
     flex-direction: column;
 }
 
+@media screen and (max-width: 350px){
+    #footer{
+        min-height: 60vh;
+    }
+}
+
  /* Keyframes for the animation */
  @keyframes slideIn {
     0% {
