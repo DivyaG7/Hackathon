@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>National Cyber Security Research Council</title>
+    <link rel="stylesheet" href="./register.css" />
+    <style>
+        .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        text-align: center;
+        position: relative;
+      }
+
+      .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        cursor: pointer;
+      }
+     
+        /* body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #777;
+        }
+
+        .message {
+            font-size: 24px;
+            color: #ff0000;
+            margin-top: 10px;
+        }
+
+        .goback-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            
+            color: #fff;
+            
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .goback-button:hover {
+            background-color: #0056b3;
+            
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <section class="container">
+        <h1>Registration Closed</h1>
+        <p>We're sorry, but registration for this event is closed.</p>
+        <p>Please check back later for updates.</p>
+        <div class="message"></div>
+        <a href="https://ncsrc.in/" class="goback-button">Go Back to Home Page</a>
+
+    </section> -->
+    <section class="container">
+        <div class="title">
+            <h2 style="text-align: center">Registration Form</h2>
+        </div>
+        <form onsubmit="register(); return false;">
+            <div id="successMessage" style="color: green;"></div>
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">NAME</span>
+                    <input name="name" type="text" placeholder="Enter your name" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">ORGANIZATION NAME</span>
+                    <input name="orgname" type="text" placeholder="Enter your Organization Name" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">DESIGNATION</span>
+                    <input name="designation" type="text" placeholder="Enter your Designation" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">EMAIL</span>
+                    <input name="email" type="text" placeholder="Enter your Email id" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">CONTACT NUMBER</span>
+                    <input name="contact" type="tel" placeholder="000-00-00000" pattern="[0-9]{10}" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">CITY</span>
+                    <input name="city" id="cityInput" type="text" placeholder="Enter your City name" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">STATE</span>
+                    <input name="state" id="stateInput" type="text" placeholder="Automatically filled based on city"
+                        required />
+                </div>
+                <div class="input-box">
+                    <span class="details">PINCODE</span>
+                    <input name="pincode" type="number" placeholder="000000" pattern="[0-9]{6}" maxlength="4"
+                        required />
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+
+    <script src="./register.js"></script>
+</body>
+
+</html>
